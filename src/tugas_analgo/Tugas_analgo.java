@@ -6,6 +6,7 @@ package tugas_analgo;
 
 import java.io.BufferedReader;
 import java.io.DataInputStream;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -223,7 +224,8 @@ public class Tugas_analgo {
     
     }
     public static void main(String[] args) throws FileNotFoundException, IOException {
-           BufferedReader reader = new BufferedReader(new FileReader("D:/Kuliah/analisis_algoritma/analgo.txt"));
+            File file = new File("src/tugas_analgo/analgo.txt");
+           BufferedReader reader = new BufferedReader(new FileReader(file.getAbsolutePath()));
            String line;
            String [] lines;
            int simpati = 0;
